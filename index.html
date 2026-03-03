@@ -11,12 +11,32 @@
 
 <body>
 
+    <div id="rezaul"></div>
+    <div id="bangladesh"></div>
+
+    <div id="resultBox"></div>
+    <div id="student"></div>
+    <div id="ourNumber"></div>
 
     <script>
-        let first = "Mobarak";
-            first = "Mr. Mobarak";
+        let myCountry = "Bangladesh is my Country";
+        document.getElementById("bangladesh").innerHTML = myCountry;
 
-            console.log(first);
+
+        let myName = "My name is Rezaul";
+        document.getElementById("rezaul").innerHTML = myName;
+
+        let numberOne = 10;
+        let numberTwo = 15;
+        let totalNumber = numberOne + numberTwo;
+        console.log(totalNumber);
+
+        document.getElementById("resultBox").innerHTML = totalNumber;
+
+        // let first = "Mobarak";
+        //     first = "Mr. Mobarak";
+
+        //     console.log(first);
         
         
         // const second = "Tobarok";
@@ -123,11 +143,63 @@
         // const totalNumber = parseFloat(total.toFixed(3));
         // console.log(totalNumber);
 
-        const fir = 56.78;
-        const second = 12.34;
-        const total = fir + second;
-        const totalNumber = parseFloat(total.toFixed(3));
-        console.log(totalNumber);
+        // const fir = 56.78;
+        // const second = 12.34;
+        // const total = fir + second;
+        // const totalNumber = parseFloat(total.toFixed(3));
+        // console.log(totalNumber);
+
+
+
+        console.log(5>10);
+        console.log(5<10);
+        console.log(10==15);
+
+        // কুই আর তোর ছোট ভাইয়ের মধ্যে খাবার কে বেশি কেয়েছে, সেটা তুলনা করিব। তুই ৭টা স্যান্ডউইচ খেয়েছিস, আর ছেঅট ভঅই ৫টা খেয়েছে। একটা প্রোগ্রাম লিখে দেখে, কে বেশি খেয়েছে।
+
+        let baroVai = 7;
+            sotoVai = 10;
+
+            if(baroVai > sotoVai){
+                console.log("বড় ভাই বেশি খেয়েছে।");
+            } else{
+                console.log("ছোট ভাই বেশি খেয়েছে।");
+            }
+
+        
+        
+         // তোর ক্লাসে ৪৫ জন ছাত্র আছে, আর পাশের ক্লঅসে ৫০ জন। েএকটা প্রোগ্রাম লিখে দেখ, কোন ক্লাসে বেশি ছাত্র আছে।
+
+         let myClass = 45;
+             anotherClass = 50;
+
+             if(myClass < anotherClass ){
+                console.log("পাশের ক্লাসে বেশি ছাত্র আছে।");
+                document.getElementById("student").innerHTML = "পাশের ক্লাসে বেশি ছাত্র আছে।";
+             } else {
+                console.log("আমার ক্লাসে বেশি ছাত্র আছে।");
+                document.getElementById("student").innerHTML = "আমার ক্লাসে বেশি ছাত্র আছে।";
+             }
+
+
+         // তুই আর তোর বন্ধু পরীক্ষায় নাম্বার পেয়েছিস। তুই ৭৫ পেয়েছিস, ্র তোর বন্ধু পেয়েছে ৭৫। এটা প্রোগ্রাম লিখে চেক কর, তোর আর তোর বন্ধুর নাম্বার সমান কি না।
+
+
+
+         let myNumber = 75;
+             yourNumber = 75;
+
+            if(myNumber == yourNumber){
+                console.log("জি, আমি এবং আমার বন্ধু সমান নাম্বার পেয়েছি।");
+                document.getElementById("ourNumber").innerHTML = "জি, আমি এবং আমার বন্ধু সমান নাম্বার পেয়েছি।";
+            } else {
+                console.log("জি, আমি এবং আমার বন্ধু সমান নাম্বার পাইনি।");
+                document.getElementById("ourNumber").innerHTML = "জি, আমি এবং আমার বন্ধু সমান নাম্বার পাইনি।";
+                               
+            }
+
+
+            
 
 
     </script>
