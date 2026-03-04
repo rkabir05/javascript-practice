@@ -13,10 +13,13 @@
 
     <div id="rezaul"></div>
     <div id="bangladesh"></div>
-
     <div id="resultBox"></div>
     <div id="student"></div>
     <div id="ourNumber"></div>
+    <div id="allDeposit"></div>
+    <div id="resultDifferent"></div>
+    <div id="resultEaqual"></div>
+    <div id="examResult"></div>
 
     <script>
         let myCountry = "Bangladesh is my Country";
@@ -197,6 +200,73 @@
                 document.getElementById("ourNumber").innerHTML = "জি, আমি এবং আমার বন্ধু সমান নাম্বার পাইনি।";
                                
             }
+
+        // তুই 100 টাকা জমানোর টার্গেট করেছিস। এখন পর্যন্ত ৯৫ টাকা জমাইছিস। একটা প্রোগ্রাম লিখে চেক কর, তুই টার্গেট পৌঁছাইছিস কি না তার চেয়ে বেশি জমাইছিস কি না।
+
+        let myDepositTerget = 100;
+            deposit = 75;
+            
+            if(myDepositTerget == deposit) {
+                console.log("জি, আমি আমার টার্গেট পুরণ করতে পেরেছি");
+                document.getElementById("allDeposit").innerHTML = "জি, আমি আমার টার্গেট পুরণ করতে পরিনি।";
+            } else {
+                console.log("জি, আমি আমার টার্গেট পুরণ করতে পেরেছি");
+                document.getElementById("allDeposit").innerHTML = "জি, আমি আমার টার্গেট পুরণ করতে পরিনি।";
+            }
+
+    // তুই একটা প্রোগ্রাম লিখে দেখ, ১০ এবং ৭ কি অসমান (Dfferent)।
+
+        let different = 10;
+            notDifferent = 7;
+
+
+             if( different != notDifferent ) {
+                console.log("জি, এটা সমান না।");
+                document.getElementById("resultDifferent").innerHTML = "জি, এটা সমান না।";
+            } else {
+                console.log("জি, এটা সমান।");
+                document.getElementById("resultDifferent").innerHTML = "জি, এটা সমান।";
+            }
+    
+
+    // ২০ কি  ১৫-এর চাইতে কম ব সমান কি না, সেটা চেক কর।
+    
+        let numberTwenty = 20;
+            numberFifteen = 15;
+
+            if(numberFifteen <= numberTwenty ) {
+                console.log("জি, ১৫, ২০-এর চাইতে ছোট।");
+                document.getElementById("resultEaqual").innerHTML = "জি, ১৫, ২০-এর চাইতে ছোট।";
+            } else {
+                console.log("না, ২০, ১৫-এর চাইতে বড়।");
+                document.getElementById("resultEaqual").innerHTML = "না, ২০, ১৫-এর চাইতে বড়।";
+            }
+
+    
+    // তুই আর তোর বন্ধু একই সাথে পরীক্ষা দিছস। পরীক্ষার দেয়ার পর তোর বন্ধু কেঁদে কেঁদে বুক ভাসিয়ে ফেলছে। তার পরী্ষা জগন্য হইছে, সে ফেল করবে। এক মাস পরে রেজাল্টে দেখা গেছে, তুই পাইছস ৪৫ না্বার আরবেন্ধু পাইছে ৯৭ নাম্বার। এইবার চেক করে দেখ, তোর বন্ধু কি তোর চাইতে কম নাম্বার পাইছে কি না।
+
+    let myExamNumber = 45;
+        friendExamNumber = 17;
+
+        if(myExamNumber > friendExamNumber){
+
+
+            console.log("আমার বন্ধু কম নাম্বার পাইছে।");
+            document.getElementById("examResult").innerHTML = "আমার বন্ধু কম নাম্বার পাইছে";
+
+
+
+
+        } else {
+
+
+            console.log("আমার বন্ধু বেশি নাম্বার পাইছে।");
+            document.getElementById("examResult").innerHTML = "আমার বন্ধু বেশি নাম্বার পাইছে।";  
+            
+            
+        }
+
+
 
 
             
