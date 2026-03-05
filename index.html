@@ -20,6 +20,14 @@
     <div id="resultDifferent"></div>
     <div id="resultEaqual"></div>
     <div id="examResult"></div>
+    <div id="sotoVaiAge"></div>
+    <div id="myResultMark"></div>
+    <div id="ourBiskut"></div>
+    <div id="readBook"></div>
+    <div id="realBarsaGoal"></div>
+    <div id="myAndFriendName"></div>
+    <div id="jamburaKodbelPrice"></div>
+    <div id="readResult"></div>
 
     <script>
         let myCountry = "Bangladesh is my Country";
@@ -154,9 +162,9 @@
 
 
 
-        console.log(5>10);
-        console.log(5<10);
-        console.log(10==15);
+        // console.log(5>10);
+        // console.log(5<10);
+        // console.log(10==15);
 
         // কুই আর তোর ছোট ভাইয়ের মধ্যে খাবার কে বেশি কেয়েছে, সেটা তুলনা করিব। তুই ৭টা স্যান্ডউইচ খেয়েছিস, আর ছেঅট ভঅই ৫টা খেয়েছে। একটা প্রোগ্রাম লিখে দেখে, কে বেশি খেয়েছে।
 
@@ -249,30 +257,163 @@
         friendExamNumber = 17;
 
         if(myExamNumber > friendExamNumber){
-
-
             console.log("আমার বন্ধু কম নাম্বার পাইছে।");
             document.getElementById("examResult").innerHTML = "আমার বন্ধু কম নাম্বার পাইছে";
-
-
-
-
         } else {
-
-
             console.log("আমার বন্ধু বেশি নাম্বার পাইছে।");
-            document.getElementById("examResult").innerHTML = "আমার বন্ধু বেশি নাম্বার পাইছে।";  
-            
-            
+            document.getElementById("examResult").innerHTML = "আমার বন্ধু বেশি নাম্বার পাইছে।";           
+        }
+
+
+    // const peyaraPrice = 40;
+    // const applePrice = 250;
+    // console.log(peyaraPrice < applePrice);
+
+
+    // const myNam = "Rahim";
+    // const friendName = "Karim";
+    // console.log(myNam == friendName);
+
+    //     const myNam = "Rahim";
+    // const friendName = "Rahim";
+    // console.log(myNam == friendName);
+
+    // const myPromise = "true";
+    // const friendPromise = "false";
+    // console.log(myPromise == friendPromise);
+
+    
+    // তোর ছোট ভাইয়ের বয়স ১০ বছর, আর তোর বয়স ১৫ বছর। একটা প্রোগ্রাম লিখে দেখ, তোর ছোট ভাইয়ের বয়স কি তোর বয়স থেকে কম বা সমান কি না।
+
+    let sotoVaiAgg = 15;
+        baroVaiAgg =15;
+
+        if(sotoVaiAgg == baroVaiAgg){
+
+
+            console.log("বড় ভাই এবং ছোট ভাইয়ের বয়স সমান।");
+            document.getElementById("sotoVaiAge").innerHTML = "বড় ভাই এবং ছোট ভাইয়ের বয়স সমান।";
+
+
+
+        } 
+        
+        
+        
+        
+        else {
+            console.log("বড় ভাই এবং ছোট ভাইয়ের বয়স সমান না।");
+            document.getElementById("sotoVaiAge").innerHTML = "বড় ভাই এবং ছোট ভাইয়ের বয়স সমান না।";           
+        }
+
+
+    // একটা পরীক্ষায় পাস মার্কস ৩৩। ধর, তুই ৪৫ পেয়েছিস। চেক কর তুই পাস করেছিস কি না।
+
+    let examPass = 33;
+        myResults = 32;
+
+        if(examPass <= myResults){
+            console.log("আমি পাস করেছি।");
+            document.getElementById("myResultMark").innerHTML = "আমি পাস করেছি।";
+        } else {
+            console.log("আমি পাস করিনি।");
+            document.getElementById("myResultMark").innerHTML = "আমি পাস করিনি।";           
+        }
+
+
+        // const jambura = "true";
+        // const kodbel = "false";
+        // console.log(myPromise == friendPromise);        
+
+    // দুইটা ভেরিয়েবলে জাম্বুরা আর কদবেলের দাম রাখা হলো। জাম্বুরা কি কদবেলের চেয়ে সস্তা কি না, সেটার তুলনা কর।
+    
+    let jamburaPrice = 20;
+        kobdelPrice = 15;
+
+        if(jamburaPrice < kobdelPrice){
+            console.log("জাম্বুরা কদবেলের চেয়ে সস্তা।");
+            document.getElementById("jamburaKodbelPrice").innerHTML = "জাম্বুরা কদবেলের চেয়ে সস্তা।";
+        } else {
+            console.log("জাম্বুরা কদবেলের চেয়ে সস্ত না।।");
+            document.getElementById("jamburaKodbelPrice").innerHTML = "জাম্বুরা কদবেলের চেয়ে সস্তা না।";
         }
 
 
 
+    // তুই ১০টা বই পড়িছিস আর তোর বন্ধু পড়েছে ১০টা। চেক কর, তোরা কি সমান সংখ্যক বই পড়েছি।
+    
+    let myBook = 15;
+        friendsBook = 15;
 
-            
+        if(myBook == friendsBook){
+            console.log("আমরা সমান বই পড়েছি।");
+            document.getElementById("readBook").innerHTML = "আমরা সমান বই পড়েছি।";
+        } else {
+            console.log("আমরা সমান বই পড়িনি।");
+            document.getElementById("readBook").innerHTML = "আমরা সমান বই পড়িনি।";           
+        }    
+    
+
+    // তোর কাছে ১৫টা বিস্কুট আর তোর বন্ধুর কাছে ২০টা বিস্কুট। চেক কর তুই কি তোর বন্ধুর থেকে কম বিস্কুট পেয়েছিস কি না।
+
+    let myBiskut = 15;
+        friendsBiskut = 10;
+
+        if(myBiskut <= friendsBiskut){
+            console.log("আমার কাছে বন্ধুর চেয়ে কম বিস্কুট আছে।");
+            document.getElementById("ourBiskut").innerHTML = "আমার কাছে বন্ধুর চেয়ে কম বিস্কুট আছে।";
+        } else {
+            console.log("আমার কাছে বন্ধুর চেয়ে বেশি বিস্কুট আছে।");
+            document.getElementById("ourBiskut").innerHTML = "আমার কাছে বন্ধুর চেয়ে বেশি বিস্কুট আছে।";           
+        }
+
+    //একটা ফুটবল ম্যাচে রিয়াল মাদ্রিদ ২টা গোল করছে, আর বার্সা ৩টা গোল করছে। চেক কর, রিয়াল মাদ্রিদ কি বার্সার চেয়ে কম গোল করেছে কি না।
+
+    let realMadrid = 5;
+        barselonaFc = 3;
+
+        if(realMadrid <= barselonaFc){
+            console.log("রিয়াল মাদ্রিদ বার্সার চেয়ে কম গোল দিছে।");
+            document.getElementById("realBarsaGoal").innerHTML = "রিয়াল মাদ্রিদ বার্সার চেয়ে কম গোল দিছে।";
+        } else {
+            console.log("রিয়াল মাদ্রিদ বার্সার চেয়ে বেশি গোল দিছে।");
+            document.getElementById("realBarsaGoal").innerHTML = "রিয়াল মাদ্রিদ বার্সার চেয়ে বেশি গোল দিছে।";           
+        }    
+
+    // তোর নাম "Rahim" আর তোর বন্ধুর নাম "Karim" । চেক কর, তোর নাম কি তোর বন্ধুর নামের সমান কি না।
+
+    const myNameIs = "Rahim";
+        friendNameIs = "Karim";
+
+        if(myNameIs <= friendNameIs){
+            console.log("আমার আর আম্বার বন্ধুর নাম সমান।");
+            document.getElementById("myAndFriendName").innerHTML = "আমার আর আম্বার বন্ধুর নাম সমান।";
+        } else {
+            console.log("আমার আর আম্বার বন্ধুর নাম সমান না।");
+            document.getElementById("myAndFriendName").innerHTML = "আমার আর আম্বার বন্ধুর নাম সমান না।";           
+        }      
+
+    // তুই আজকে পড়াশোনা করেছিস (true), আর তোর বন্ধু পড়াশোণা করেনি (false)। চেক কর, তোরা কি একই রকম কাজ করেছিস কি না।
+
+    let iRead = true;
+    let friendsRead = true;
+
+        if (iRead != friendsRead) {
+            console.log("আমরা সমান কাজ করিনি।")
+            document.getElementById("readResult").innerHTML = "আমরা সমান কাজ করিনি।";
+        } else {
+            console.log("আমরা সমান কাজ করেছি।")
+            document.getElementById("readResult").innerHTML = "আমরা সমান কাজ করেছি।";
+        }
 
 
     </script>
+
+
+
+    </script>
+
+
 
     
 </body>
