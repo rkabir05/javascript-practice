@@ -28,6 +28,8 @@
     <div id="myAndFriendName"></div>
     <div id="jamburaKodbelPrice"></div>
     <div id="readResult"></div>
+    <div id="myMoney"></div>
+    <div id="jSBangla"></div>
 
     <script>
         let myCountry = "Bangladesh is my Country";
@@ -406,6 +408,53 @@
             document.getElementById("readResult").innerHTML = "আমরা সমান কাজ করেছি।";
         }
 
+        // console.log(10!=="11");
+
+        // তোর কাছে ৫০ টাকা আছে, আর বন্ধুর কাছে আছে “৫০” টাকা (স্ট্রিং হিসেবে) একটা প্রোগ্রাম লিখে দেখ, ৫০ == ”৫০” দিলে আর ৫০ === ”৫০” আউটপুট কি আসবে।
+
+        let myfifty = 50;
+        let friendsfifty = 50;
+
+        if (myfifty == friendsfifty){
+            console.log("আমার টাকা আর বন্ধুর টাকা সমান।")
+            document.getElementById("myMoney").innerHTML = "আমার টাকা আর বন্ধুর টাকা সমান।";
+        } else if (myfifty === friendsfifty){
+            console.log("আমার টাকা এবং বন্ধুর টাকা এক্কেবারে সমান সমান।");
+        }
+        else {
+            console.log("আমার টাকা আর বন্ধুর টাকা সমান না।")
+            document.getElementById("myMoney").innerHTML = "আমার টাকা আর বন্ধুর টাকা সমান না।";
+        }
+
+        // তোর প্রোগ্রামিং নোটবুকে “JavaScript” লিখে রেখেছিস, আর এটা একটা স্ট্রিং টাইপ ডাটা। এখন তুই ধেখতে চাস “JavaScript” == 'JavaScript' আর “JavaScript” === 'JavaScript' দিলে কী আউটপুট আসবে। ব্যাখ্যা কর কেন একই আউটপুট।
+
+        let jscript = "JavaScript";
+        let jSString = 'JavaScript';
+
+        if (jscript == jSString){
+            console.log("বাংলাদেশ")
+            document.getElementById("jSBangla").innerHTML = "বাংলাদেশ";
+        }
+
+        // একটা প্রোগ্রাম লিখে দেখ ২৫ এবং “২৫”-এর ম্যে ২৫ == “২৫” এবং ২৫ === “২৫” দিলে কী আউটপুট আসবে এবং কেন সেটা হয়, সেটা কমেন্ট করে লিখ।
+
+        let myTwentyFive = 25;
+        let friendTwentyFive = "25";
+
+        if (myTwentyFive == friendTwentyFive) {
+            console.log ("আমার পচিশ");
+        } else if (myTwentyFive === friendTwentyFive) {
+            console.log ("বন্ধুর পচিশ");
+
+        }
+
+        // "apple" এবং "apple" লিখে ‍ুলনা করলে, "apple" == "apple" এবং "apple" === "apple" এর আউটপুট কী হবে।
+
+        // একটা প্রোগ্রাম লিখে দেখ, "test" এবং "TEST" -এর মধ্যে "test" == "TEST" এবং "test" === "TEST" এর আউটপুট কী হবে।
+
+        // variabaleX এর মান ১৫ আর variabaleY এর মান “২০” দিলে variabaleX != variabaleY এবং variabaleX !== variabaleY এর আউটপুট কি হবে।
+
+        // variabaleA-এর মান hello আর variabaleB-এর মান “Hello”। এখন variabaleA == variabaleB  এবং variabaleA === variabaleB চেক করে প্রোগ্রাম লিখ।
 
     </script>
 
