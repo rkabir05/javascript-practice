@@ -448,13 +448,52 @@
 
         }
 
-        // "apple" এবং "apple" লিখে ‍ুলনা করলে, "apple" == "apple" এবং "apple" === "apple" এর আউটপুট কী হবে।
+        // "apple" এবং "apple" লিখে তু‍ুলনা করলে, "apple" == "apple" এবং "apple" === "apple" এর আউটপুট কী হবে।
+
+        let myApple = "apple";
+        let yourApple = "apple";
+
+        if (myApple == yourApple){
+            console.log ("আমার আপেল")
+        } else if (myApple === yourApple) {
+            console.log ("তোমার আপেল")
+        }
 
         // একটা প্রোগ্রাম লিখে দেখ, "test" এবং "TEST" -এর মধ্যে "test" == "TEST" এবং "test" === "TEST" এর আউটপুট কী হবে।
 
+        let myTest = "test";
+         yourTest = "TEST";
+
+        if (myTest == yourTest){
+            console.log("আমার স্বাদ");
+        } else if (myTest === yourTest){
+            console.log("তোমার স্বাদ")
+        } else {
+            console.log("মান সমান নয়।")
+        }
+
+
         // variabaleX এর মান ১৫ আর variabaleY এর মান “২০” দিলে variabaleX != variabaleY এবং variabaleX !== variabaleY এর আউটপুট কি হবে।
 
+        let variabaleX = 15;
+        let variabaleY ="20";
+
+        if (variabaleX != variabaleY) {
+            console.log ("ভ্যারিয়েবল এক্স")
+        } else if (variabaleX !== variabaleY) {
+            console.log ("ভ্যারিয়েবল ওয়াই")
+        }
+
         // variabaleA-এর মান hello আর variabaleB-এর মান “Hello”। এখন variabaleA == variabaleB  এবং variabaleA === variabaleB চেক করে প্রোগ্রাম লিখ।
+
+        let variabaleA = hello;
+         variabaleB = "Hello";
+
+        if (variabaleA == variabaleB) {
+            console.log("ভ্যারিয়েবল অ্যা")
+        } else if (variabaleA === variabaleB) {
+            console.log("ভ্যারিয়েবল বি")
+        }
 
     </script>
 
