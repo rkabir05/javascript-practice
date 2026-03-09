@@ -486,13 +486,68 @@
 
         // variabaleA-এর মান hello আর variabaleB-এর মান “Hello”। এখন variabaleA == variabaleB  এবং variabaleA === variabaleB চেক করে প্রোগ্রাম লিখ।
 
-        let variabaleA = hello;
-         variabaleB = "Hello";
+        // let variabaleA = hello;
+        //  variabaleB = "Hello";
 
-        if (variabaleA == variabaleB) {
-            console.log("ভ্যারিয়েবল অ্যা")
-        } else if (variabaleA === variabaleB) {
-            console.log("ভ্যারিয়েবল বি")
+        // if (variabaleA == variabaleB) {
+        //     console.log("ভ্যারিয়েবল অ্যা")
+        // } else if (variabaleA === variabaleB) {
+        //     console.log("ভ্যারিয়েবল বি")
+        // }
+
+
+        // তোর আম্মু বলছে, ৬টার আগে বাসায় ফিরলে তোকে নাস্তা খাওয়াবে। আর দেরি করলে ঝাড়ুর বাড়ি দিবে। এই শর্তের জন্য কোড কর।
+
+        const breakfast = 6;
+        if (breakfast == 6 ){
+            console.log("If you return home before 6, I'll feed you breakfast.");
+        } else {
+            console.log("If you are late, they will give you a broom house.");
+        }
+
+        // একটা মোবাইল অ্যাপে যদি লগইন সফল হয়, তাহলে "welcome!" দেখঅবে। যদি ব্যর্থ হয় "Get Lost!" দেখাবে। এই শর্তের একটা প্রোগ্রাম লিখ।
+
+        const mobileApps = true;
+        if (mobileApps == false) {
+            console.log("Welcome")
+        } else {
+            console.log("Get Lost!")
+        }
+
+        // তুই যদি ৫ কি মি দৌড়াস, তাহলে তোকে চকলেট খেতে দিবে। যদি না দৌড়াস, তাহলে তোর মোটা ভুঁড়ি হবে। এই শর্তের জন্য প্রোগ্রাম লিখ।
+
+        const dailyRun = 5;
+        if (dailyRun == 2) {
+            console.log("চকলেট খেতে দিবে");
+        } else {
+            console.log("তোর মোটা ভুঁড়ি হবে");
+        }
+
+        // ধর, তোর বাবা বলেছেন যদি তুই পরীক্ষায়  ৮০-এর বেশি পেয়ে পাস করিস, তাহলে তোকে বাইক কিনে দিবে। কিন্তু যদি কম হয়, তাহলে বাইক দিবে না। একটা প্রোগ্রাম লিখে দেখ, তুই বাইক পাবি কি না, যদি তোার নাম্বার ৮৫ হয়। 
+
+        const examPassNumber = 80;
+        if (examPassNumber < 85) {
+            console.log("বাইক কিনে দিবে।");
+        } else {
+            consloe.log("বাইক দিবে না।");
+        }
+
+        // যদি মুভির শো রাত ৯টার আগে হয়, তাহলে তুই মুভি দেখবি। যদি পরে হয়, তাহলে বাসায় গিয়ে নামে তেল দিয়ে ঘুমাবি। এর জন্য প্রোগ্রাম লিখ।
+
+        const movieTime = 9;
+        if (movieTime > 11) {
+            console.log("মুভি দেখবি।");
+        } else {
+            console.log("বাসায় গিয়ে নামে তেল দিয়ে ঘুমাবি।");
+        }
+
+        // তাপমাত্রা ৩০ ডিগ্রি বা তার বেশি হয়, তাহলে এয়ার কন্ডিশনার চালাবি। আর কম হলে কম্বল মুড়ি দিয়েই ঘুমাবি। এর জন্য কোড লিখ।
+
+        const temperature = 30;
+        if (temperature < 29) {
+            console.log("এয়ার কন্ডিশনার চালাবি।");
+        } else {
+            console.log("কম্বল মুড়ি দিয়েই ঘুমাবি।");
         }
 
     </script>
