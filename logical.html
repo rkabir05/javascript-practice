@@ -47,7 +47,63 @@
                 }
             } 
         } 
+
+
+
+
+        // ৩) তুই একটা অ্যাপ বানিয়েছিস, প্রথমে চেক করবি, ব্যবহারকারীর অ্যাকাউন্ট অ্যাক্টিভি কি না। যদি অ্যাকটিভ হয়, তার সাবস্ক্রিপশন চেক করবি। যদি প্রিমিয়াম হয়, তাকে প্রিমিয়াম ফিচার দেখাবি। না হলে বলবি, ‘ফ্রি ভার্সন দেখুন।’
+
+        let app = true;
+            accountActive = false;
+
+        if (app == true){
+            if (accountActive == true){
+                console.log("প্রিমিয়াম ফিচার");
+            } else {
+                console.log("ফ্রি ভার্সন দেখুন।");
+            }
+        } 
         
+
+        // ৪) তোর বাসার ফ্রিজে খাবার আছে কি না, চেক করবি। যদি থাকে, খাবার গরম করবি। আর যদি না থাকে চেক করবি, ফুড ডেলিভারি অ্যাপ কাজ করছে কি না। কাজ করলে অর্ডার করবি, না হলে বলবি, ‘আজকে আমি রোজা।’
+
+        let RefrigeratorFood = false;
+            foodDelevaryApp = true;
+
+        if (RefrigeratorFood == true) {
+                console.log("খাবার আছে। gormo korbo");
+
+        } else {
+            if (foodDelevaryApp == true) {
+                console.log("খাবার অর্ডার করবো।");
+            } else {
+                console.log("আজকে আমি রোজা।");
+            } 
+        }
+
+
+
+
+
+        // ৫) ধর তুই একটা পার্টি করবি। প্রথমে দেখবি পার্টিতে ১০০ জনের বেশি গেস্ট আসবে কি না। যদি আসে তাহলে চেক করবি, সাবিই গিফট আনবে কি না। যদি আনে, বলবি, 'Lets party all night' নচেৎ বলবি, 'I wdill party with myself.
+
+        let partyGuest = 103 ;
+            gift = false;
+
+        if (partyGuest > 100) {
+            if (gift == true){
+                console.log("Lets party all night.")
+            } else {
+                console.log("I wdill party with myself.")
+            }
+        } else {
+            console.log('100 joner besi na');
+        } 
+
+
+
+
+
 
 
     </script>
