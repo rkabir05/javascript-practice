@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learning Javascript</title>
+</head>
+
+<body>
+    <script>
+        // const friends = ['Balam', 'Golam', 'Elam', 'Gelam', 'Kalam', 'Pelam', 'Nilam',];
+        // const exist = friends.includes('Gelam')
+        // console.log(exist)
+
+
+        // const friends = ['Balam', 'Golam', 'Elam', 'Gelam', 'Kalam', 'Pelam', 'Nilam',];
+        
+        // if (friends.includes('Gelam')) {
+        //     console.log('Party');
+        // } else {
+        //     console.log('NO food. We are fasting');
+        // }
+
+
+        // const friends = ['Balam', 'Golam', 'Elam', 'Kalam', 'Gelam', 'Pelam', 'Nilam',];
+        // const index = friends.indexOf('Gelam');
+        // console.log(index);
+
+        // const friends = ['Balam', 'Golam', 'Elam', 'Kalam', 'Gelam', 'Pelam', 'Nilam',];
+        // const index = friends.indexOf('Gailam');
+        // console.log(index)  ;
+        
+        
+        // Practis : কে Includes আছে, কে নাই
+
+        // 1) তুই একটা প্রোগ্রাম বানাতে চাস, যেটাতে 'আম', নামক একটা ফল লিস্টে আছে কি না, সেটা চেক করবে। যদি থাকে, তবে আউটপুটে বলবে, 'আম আছে', আর না থাকলে বলবে, 'আম নেই, গাছে ওঠ'। ফলের অ্যারেতে 'আপেল', 'কলা', 'আম' ও 'লিচু' আছে।
+
+        // const fruits = ['আপেল', 'কলা', 'আম', 'লিচু'];
+
+        // if (fruits.includes('আম')) {
+        //     console.log('আম আছে');
+        // } else {
+        //     console.log('আম নেই, গাছে ওঠ');
+        // }
+
+        // 2) তুই একটা অ্যারে বানালি, যেখানে নামগুলো আছে - 'বাবুল', 'আলিফ', 'ছোটন'। এখন প্রোগ্রাম লিখে দেখ, বাবুলের ইনডেক্স নাম্বার কত।
+
+        // const friends = ['আলিফ', 'বাবুল', 'ছোটন'];
+
+        // const index = friends.indexOf('বাবুল');
+        // console.log(index);
+
+     
+
+        // // 3) ধর, তুই বন্ধুদের নামের একটা লিস্ট বানিয়েছিস অ্যারেতে- 'লিমন', 'আরিফ', 'রাজিব'। এখন তোর মনে হলো, 'রিফাত'-এর অবস্থানটা ভুলে গেছিস। একটা প্রোগ্রাম লিখে রিফাতে ইনডেক্স বের কর।
+
+        // const friends = ['লিমন', 'আরিফ', 'রাজিব'];
+        // const index = friends.indexOf('রিফাত');
+        // console.log(index);
+
+        // // 4) তুই কিছু শহরের নাম লিখে রাখছিস- 'Dhaka', 'Chittagong', 'Sylhet'| এখন তুই ভাবলি, আরেকটা শহরের নাম যোগ করবি, কিন্তু ভুলে ছোট হাতের rajshahi যোগ করে ফেললি। এবার প্রোগ্রাম লিখে চেক কর, RajShahi আছে কি না।
+
+        // const city = ['Dhaka', 'Chittagong', 'Sylhet', 'rajshahi'];
+        // const exist = friends.includes('RajShahi');
+        // console.log(exist);
+
+
+        // // 5) একটা প্রোগ্রাম বানিয়ে 'বৃষ্টি' নামক উপাদান আছে কি না, চেক র। যদি থাকে, তাহলে আউটপুটে বলবি 'I Need umbrealla' না থাকলে বিলবি 'NO rain no pain'। অ্যারেতে 'দীঘি', 'মেঘ', 'বৃষ্টি' ও 'বর্ষা' আছে।
+
+        // const weather = ['দীঘি', 'মেঘ', 'বৃষ্টি', 'বর্ষা'];
+        // if (weather.includes('বৃষ্ট')) {
+        //     console.log('I Need umbrealla');
+        // } else {
+        //     console.log('NO rain no pain');
+        // }
+
+        // // 6) তোর প্রিয় খেলাধুলার একটা অ্যারে আছে- 'ফুটবল', 'ক্রিকেট', 'ভলিবল'। এখন তুই চেক করতে চাস 'ব্যাডমিন্টন', নামক খেলাটি অ্যারেতে আছে কি না।
+
+        // const game = ['ফুটবল', 'ক্রিকেট', 'ভলিবল'];
+        // const exixts = game.includes('ব্যাডমিন্টন');
+        // console.log(exixts);
+
+
+        const friends = ['রহিম', 'করিম', 'সেলিম', 'শাকিল', 'আবুল', 'বরকত', 'জব্বার', 'রহমত'];
+        console.log(friends)
+
+
+        const city = ['ঢাকা', 'বরিশাল', 'চট্টগ্রাম', 'রাজশাহী', 'রংপুর', 'সিলেট', 'খুলনা', 'গাজীপুর'];
+        city.push('নারায়ণগঞ্জ');
+        console.log(city);
+
+
+        const foods = ['বার্গার', 'পিৎজা', 'কোক', 'স্যুপ', 'চিকেন ফ্রাই',];
+        foods.pop();
+        console.log(foods);
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
