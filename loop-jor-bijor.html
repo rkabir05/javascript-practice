@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learning Javascript</title>
+</head>
+
+<body>
+    <script>
+
+        // for (let num = 1; num < 10; num++){
+        //     console.log(num)
+        // }
+
+
+        // let sum = 0;
+        // for (let num = 11; num <= 20; num++){
+        //     sum = sum + num;
+        //     // console.log(sum)
+        //     // console.log(num)
+        // }
+        // console.log('sum of number 11 to 20 is', sum);
+
+        
+        // for (let num = 1; num <= 5; num++) {
+        //         console.log(num);
+        // }
+
+        
+        // for (let num=0; num <= 20; num++) {
+        //     if (num % 2 == 0) {
+        //         console.log(num);
+        //     }
+        // }
+
+        // for (let num=0; num <= 20; num++) {
+        //     if (num % 2 == 1) {
+        //         console.log(num);
+        //     }
+        // }      
+        
+        // for (let num = 2; num <= 20; num =num+2 ){
+        //     console.log(num);
+        // }
+
+
+        // for (let num = 1; num <= 20; num =num+2 ){
+        //     console.log(num);
+        // }
+
+        // for (let num = 1; num <= 30; num++) {
+        //     if (num % 5 == 0) {
+        //         console.log(num);
+        //     }
+        // }
+
+
+        // for (let num = 1; num <= 30; num++) {
+        //     if (num % 3 == 0) {
+        //         console.log(num);
+        //     }
+        // }
+
+
+        // for (let num = 1; num <= 30; num++) {
+        //     if (num % 5 == 0 || num % 3 == 0) {
+        //         console.log(num);
+        //     }
+        // }  
+
+
+        // for (let num = 1; num <= 45; num++) {
+        //     if (num % 5 == 0 && num % 3 == 0) {
+        //         console.log(num);
+        //     }
+        // }    
+        
+        
+        // প্রাকটিস : জোড় বিজোড় লুপের শর্ত এবং ভাজতে ভাজতে বিভাজ্য 
+
+        // ১) তোর কাজ হবে ২০ থেকে ৫০ পর্যন্ত যে সব সংখ্যা ৭ দিয়ে বিভাজ্য, তা আউটপুট হিসেবে দেখা।
+
+        // for (let num = 20; num <= 50; num++) {
+        //     if (num % 7 == 0) {
+        //         console.log(num);
+        //     } 
+
+
+        // }
+
+        // ২) এইবার ৪০ থেকে ৮০ পর্যন্ত যে সব সংখা ৫ দিয়ে এবং ৭ দিয়ে বিভাজ্য, তা আউটপুট হিসেবে দেখা।
+
+        // for (let num = 40; num <= 80; num++) {
+        //     if (num % 5 == 0 || num % 7 == 0 )
+        //     console.log(num);
+        // }
+
+        // ৩)  এখন তোর প্রবলেম হলো ১ থেকে ৪০ পযৃন্ত যে সকল সংখ্যা ১৩ দিয়ে বিভাজ্য তাদের যোগফল কর।
+
+        let sumBd = 0;
+
+        for (let num = 1; num <= 40; num++) {
+            if (num % 13 === 0 ) {
+                sumBd = sumBd + num;
+            }
+        }        
+
+        console.log(sumBd);
+
+        // 4) for লুপ দিয়ে ১ থেকে ৫০ পর্যন্ত লুপ চালাবি। তবে লুপ চালানোর সময় লুপ ভেরিয়েবলের মান প্রত্যেকবার ৪ করে বাড়াবি।
+
+        // for (let num = 1; num <= 50; num++) {
+        //     if (num % 4 == 0) {
+        //         console.log(num);
+        //     }
+        // }
+
+        // ৫) ০ থেকে ১০০ পর্যন্ত সব সংখ্যাগুলো প্রিন্ট কর, যা ৯  এবং ৬ দিয়ে বিভাজ্য।
+
+        // for (let b = 0; b <= 100; b++) {
+        // if (b % 9 == 0 || b % 6 == 0)  {
+        //         console.log(b)
+        //     }
+        // }
+
+
+        // ৬ ) ১ থেকে ৫০ পর্যন্ত এমন সংখ্যাগুলো প্রিন্ট কর, যা ৩ এবং ৪ উভয়ের দারা বিভাজ্য এবং সংখ্যাগুলোর যোগফল বের কর।
+
+        // let sumReza = 0;
+
+        // for (let num = 1; num <= 50; num++) {
+        //     if (num % 3 == 0 && num % 4 == 0) {
+        //         sumReza = num + sumReza;  
+        //         console.log(sumReza);
+        //     }
+        // }
+
+
+
+
+        
+        
+
+
+        
+
+
+
+
+    </script>
+
+</body>
+
+</html>
