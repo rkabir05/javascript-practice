@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learning Javascript</title>
+</head>
+
+<body>
+    <script>
+
+        // const person = {
+        //     name : 'Sador uddin',
+        //     age : 25,
+        //     professon : 'Developer',
+        //     salary : 25000,
+        //     married: true
+        // };
+        // console.log(person.salary)
+
+        // const person = {
+        //     name : 'Sador uddin',
+        //     age : 25,
+        //     professon : 'Developer',
+        //     salary : 25000,
+        //     married: true,
+        //     'fav places' : ['Bandarban', 'Rangamati', 'Kuakata']
+        // };
+        // console.log(person.name)
+        // console.log(person['fav places'])
+
+
+
+        // const crickter = {
+        //     position: 4,
+        //     spaciality: 'Batter',
+        //     age: 24,
+        //     runs: 8000
+        // }
+        // console.log(crickter.position);
+        // console.log(crickter['runs']);
+
+        // crickter.position = 1;
+        // crickter['runs'] = 9000;
+
+        // console.log(crickter['position']);
+        // console.log(crickter.runs);
+        
+
+
+        // const college = {
+        //     name : 'VNC',
+        //     class : ['11', '12'],
+        //     events : ['Science fair', 'Bijoy dibos', '21 February'],
+        //     unique : {
+        //         color : 'blue',
+        //         result : {
+        //             gpa : 5,
+        //             merit : 'Top'
+        //         }
+        //     }
+        // };
+
+        // console.log(college.unique.color);
+        // console.log(college.unique.result.merit);
+        // console.log(college.events[1]);
+
+
+        // প্রাকটিস : Gardwala ঘরের ভিতর ঘর
+
+        // ১) তুই player অজেক্ট তৈরি করবি। নাম, বয়স স্পোর্টস, টিম ইত্যাদি প্রোপার্টি থাকবে। তারপর সেই অবজেক্ট থেকে dot notation দিয়ে তার টিমের নাম console কর।
+
+        const player = {
+            name : 'Masrafi',
+            age : 35,
+            team : 'Bangladesh'
+        } 
+        console.log(player.team)
+
+
+        // ২) একটা laptop অবজেক্ট  তৈরি কর। তার bran, price, heardDisc, ram, screenSize ইত্যাদি প্রোপার্টি থাকবে। dot notation  দিয়ে screenSize বের কর।
+
+        const laptop = {
+            brand : 'Dell',
+            price : 9000,
+            color : 'Black',
+            processor : 'AMD Athlon Silver 7120U',
+            heardDisc : 'Seagate IronWolf 2TB 3.5 Inch SATA 5400RPM NAS Hard Drive',
+            screenSize : 25,
+        }
+
+        console.log(laptop.screenSize)
+
+
+        // ৩) তোর একটা প্রিয় জায়গা আছে, যার নাম favPlace। তার মধ্যে কিছু তথ্য আছে। যেমন - name : 'Cox Bazar', distance : '400 km', আর popularity : 'High',। bracet notation দিয়ে popularity প্রোপার্টি console কর।
+
+        const favPlace = {
+            name : 'Cox Bazar',
+            distance : '400 km',
+            popularity : 'High'
+        }
+
+        console.log(favPlace['popularity']);
+
+        // ৪) তুই একটা phone অবজেক্ট বানাস। সেখানে brand, color, price প্রোপার্টি থাকে। ব্রান্ড দিস nokia, কালার Black আর দাম ৫০০০। ব্রাকেট নোটেশন দিয়ে দাম বের কর।
+
+        const phone = {
+            brand : 'Nokia',
+            color : 'Black',
+            price : 5000
+        }
+        console.log(phone['price']);
+
+        // ৫) একটা library অবজেক্ট তৈরি কর। তার মধ্যে দাম name Public Library, Location Dhaka আর  books : 5000 প্রোপার্টি থাকবে। dot notation দিয়ে location বের কর।
+
+        const library = {
+            name : 'Public Library', 
+            Location : 'Dhaka', 
+            books : 5000
+        } 
+        console.log(library.Location)
+
+        // ৬) একটা Movie অবজেক্ট বানা। যার title inception, director Nolan, rating 9| bracket notation দিয়ে rating প্রোপার্টি বের কর। 
+
+        const movie = {
+            title : 'inception',
+            director : 'Nolan',
+            rating : 9
+        }
+        console.log(movie['rating']);
+
+        // ৭) একটা college অবজেক্ট বানা। যার নাম ndc, স্থাপিত (established) 1949, সেকেন্ড (groups) ['Science', 'Arts', 'Commerce']। এইবার তোর কাজ হবে  সেকেন্ড গ্রুপ এর মান অর্থ ১ ইনডেক্সের মান বের কর। 
+
+        const college = {
+            name : 'NDC',
+            established : 1949,
+            groups : ['Science', 'Arts', 'Commerce']
+        }
+        console.log(college.groups[1])
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
