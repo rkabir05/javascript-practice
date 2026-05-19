@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learning Javascript</title>
+</head>
+
+<body>
+    <script>
+
+        // const person = {
+        //     name: 'sador uddin',
+        //     age: 25,
+        //     profession: 'developer',
+        //     salary: 25000,
+        //     married: true,
+        //     'fav places': ['bandarban', 'saintmartin', 'kuakata']
+        // };
+        // console.log(person['married']);
+        // console.log(person['fav places']);
+
+        // const college ={
+        //     name:'vnc',
+        //     class: ['11', '12'],
+        //     events: ['science fair', 'bioy dibos', '21st feb'],
+        //     unique: {
+        //         color: 'blue',
+        //         result : {
+        //             gpa: 5,
+        //         merit: 'top',
+        //         }
+        //     }
+        // }
+        // console.log(college.unique.color);
+        // console.log(college.unique.result.gpa);
+        // console.log(college.events[2]);
+
+
+
+        // const computer = {
+        //     brand: 'lenvo',
+        //     price: 35000,
+        //     processor: 'intel',
+        //     ssd: '512gb'
+        // }
+        // const keys = Object.keys(computer);
+        // console.log(keys);
+
+
+        // const values = Object.values(computer);
+        // console.log(values);
+
+        
+
+
+        const profile = {
+            name: 'Rahim',
+            age: 28,
+            city: 'Dhaka',
+        } 
+        
+        if('email' in profile) {
+            console.log('email exits');
+        } else {
+            console.log('No email. No spam');
+        }
+
+        const profileKeys= Object.keys(profile);
+        const hasName = profileKeys.includes('name');
+        console.log(hasName);
+
+
+
+        if(profile.hasOwnProperty('email')) {
+            console.log('Email Niye boroloki dekhai');
+        } else {
+            console.log('Email Chara Jibon');
+        }
+
+        if (profile.city === 'Dhaka') {
+            console.log('Jam er sohor Dhaka'); 
+        } else{
+            console.log('Aram sob grame');
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
