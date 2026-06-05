@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learning Javascript</title>
+</head>
+
+<body>
+    <script>
+        const person = {
+            name: 'Alice',
+            age: 25,
+            country:'Bangladesh',
+        } ;
+        const entries = Object.entries(person);
+        console.log(entries);
+        Output:
+        [
+            ['name','Alice'],
+            ['age', 25],
+            ['country', 'Bangladesh']
+        ]
+
+
+        // const profile = {
+        //     name: 'Rahim',
+        //     age: 28,
+        //     city: 'Dhaka',
+        // } ;
+        // for (const key in profile) {
+        //     const value = profile[key];
+        //     console.log(key, value);
+        // }
+
+        // const profile = { name: 'Rahim', age: 28, city: 'Dhaka'};
+        // const keys = Object.keys(profile);
+        // for (const key of keys) {
+        //     console.log(key, profile[key]);
+        // }
+            
+        
+        // Practice:
+        // ১) বই নামে একটা অবজেক্ট বানিয়ে ফেল। সেটার মধ্যে বইয়ের নাম, লেখক, দাম ইত্যাদি থাকবে। তারপর অজেক্টের সব প্রোপার্টি (keys) এবং সব ভ্যালু (values) কনসোল লগ কর।
+
+        const book = {
+            name: 'Java Script Maro Thaba',
+            writer: 'Jhankar Mahbub',
+            price: 700,
+        };
+
+        console.log(book.name);
+
+        for (const kamal in book) {
+            const value = book[kamal];
+            console.log(kamal, value);
+        }
+
+
+        // ২) এই অবজেক্টটিতে চেক কর, author প্রোপার্টি আছে কি না। const article = {title: 'Learning JS', category: 'Programming'};
+
+        const article = { 
+            title: 'Learning JS',
+            category: 'Programming',
+            author: 'Rezaul Kabir',
+        };
+        if ('author' in article) {
+                console.log('author নামে প্রোপার্টি ace');
+            } else {
+                console.log('author নামে প্রোপার্টি nei');
+            }
+
+
+
+
+        // let rahim = {
+        //     house : '5 flats',
+        //     skill : ['html', 'CSS'],
+        // }
+
+        // let banana = {
+        //     name : 'Sagor',
+        //     color : 'Green',
+        //     weight : 100,
+        //     size : 5,
+        //     price : '10 tk', 
+        // }
+
+
+        // 3) তোকে ল্যাপটপ নামের একটা অবজেক্ট দেওয়া হলো - const laptop = {brand : 'Dell', model: 'Inspiron', price : '45000'}; এইবার for...in লুপ চালিয়ে প্রতিটি প্রোপার্টি এবং তার মান পিন্ট কর।
+
+        // ৪) একটা Phone নামের একটা অবজেক্ট আছে। const Phone = {Brand: 'Sumsung', mobel : 'Galaxy S21', price: 85000}; ্‌টিার জন্য Object.keys ব্যবহার করে for...of লুপ চালিয়ে প্রতিটি প্রোপার্টি এবং তার মান কনসোল লগ কর।
+        
+        // ৫) ‍তুই একটা, bike অবজেক্ট বানাস, যেখানে brand: 'Yamaha', price : 309000 আর model : 'FZX', প্রোপার্টিগুলো থাকবে। object.vlues() মেথড ব্যবহার করে সব ভ্যালুগুলো বের কর।
+
+        // ৬) const books = {book1 'Harry Potter', book2 'The Hobbit', book3 'Game of Thrones'}; এর ওপরে লুপ চালিয়ে সব বইয়ের নাম লগ কর।
+
+        // ৭) সংখ্যার একটা অবজেক্ট দিলাম- const numbers = {a: 10, b: 20, c: 30, d:49}; ৈএইবার বুদ্ধি খঅটিয়ে এই অবজেক্টের সব প্রোপার্টির ভ্যালুগলোর যোগফল বের কর।
+
+
+        // একটা player অবজেক্ট বানা যেখানে name : 'Messi', team: 'Argentina', আর goals: 91 Object.values ব্যবহার করে সব ভ্যালু বের কর।
+
+        // ৯) একটা building অবজেক্ট বানা,যোর মধ্যে floors 10, adress {stree : 'main road', city : 'Dhaka'}, আর Type Commercial।  এখন একটা for...in লুপ চালিয়ে সব প্রোপার্টি ভ্যালু প্রিনট কর।
+
+
+    </script>
+
+</body>
+
+</html>
