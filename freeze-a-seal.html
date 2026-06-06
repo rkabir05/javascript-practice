@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learning Javascript</title>
+</head>
+
+<body>
+    <script>
+
+        const person = {name:'alice', age:25, country: 'Bangladesh'};
+        delete person.age;
+        console.log(person);
+
+        const adminUser = {
+            username: 'admin',
+            email: 'admin@example.com',
+            role: 'superadmin',
+        } ;
+        Object.freeze(adminUser);
+        //Attempt to modify the object
+        adminUser.role = 'user';
+        adminUser.password = '123456';
+        delete adminUser.email;
+        console.log(adminUser);
+
+
+        const user = {
+            username: 'reza',
+            email: 'rkabir05@gmail.com',
+            password: 'Reza@@',
+        };
+        Object.seal(user);
+        // attemt to mofify the object
+        user.password = 'newpassword'; //Alowed
+        user.age = 30; //adding new property is not allowed
+        delete user.email; //deleting property is not allowed
+        console.log(user);
+
+
+        //Practice:
+
+        // 1) ধর, তোর একট Headphone অবজেক্ট আছে, যার মধ্যে brand: 'Sony', price: 300, আর color: 'red',| Object.freeze() মেথড ব্যবহার করে অবজেক্টটা freeze Ki| এরপর আরেকটা নতুন প্রোপার্টি যোগ করতে চেষ।টা কর। দেখ কাজ করে কি না।
+
+        const headphone = {brand: 'Sony', price: 300, color: 'Red'};
+        Object.freeze(headphone);
+        headphone.color = 'Black';
+        headphone.price = '350';
+        delete headphone.brand;
+        console.log(headphone);
+
+
+        // ২) const player = {name : 'Messi', goals: 800, club: 'Inter Miami'}; Object.freeze() ব্যবহার করে অবজেক্ট ফ্রিজ কর। তারপর নতুন প্রোপার্টি যোগ করে দেখ, কাজ করে কি না।
+
+        const player = {name: 'Messi', goals: 800, club: 'Inter Miami'};
+        Object.freeze(player);
+        player.age = 30,
+        console.log(player);
+
+
+        //৩) book = {title: 'Harry Potter', author : 'JK Rowling', pages: 500,} Object.seal() ব্যবহার করে অবজেক্ট সিল কর। তারপর Author প্রোপার্টি চেইঞ্জ করে দেখ।
+
+        const book = {title: 'Harry Potter', author: 'JK Rowling', pages: 500};
+        Object.seal(book);
+        // book.author = 'kabir';
+        // book.pages = 900;
+        console.log(book);
+
+        // ৪) gadget অবজেক্ট বানা, যার মধ্যে name :'Iphone', price: 120000, আর color: 'Black', থাকবে। delete ব্যবহার করে price ডিলিট কর। 
+
+        const gadget = {
+           name :'Iphone',
+           price: 120000, 
+           color: 'Black', 
+        };
+        delete gadget.price;
+        console.log(gadget);
+        
+        // 5) একটা animal অবজেক্ট বানা, যার মধ্যে name : 'Tiger', location: 'Sundarban', থাকবে। এখন এমন কিছু কর, যাতে টাইগারের লোকশন চেইঞ্জ করা না যায়।
+        const animal = {name : 'Tiger', location: 'Sundarban'};
+        Object.seal(animal);
+        animal.location = 'National Zoo';
+        console.log(animal);
+
+        // 6) const food = {name: 'pizza', price = 500, size: 'Large'}; এমন কিছু কর, যাতে food-এর মধ্যে নতুন প্রোপার্টি যোগ করা যাবে না। তবে চাইলে দাম বাড়ানো বা কমানো যাবে।
+
+        const food = {name: 'pizza', price : 500, size: 'Large'};
+        Object.seal(food);
+        food.location = 'KFC';
+        console.log(food);
+
+
+    </script>
+
+</body>
+
+</html>
