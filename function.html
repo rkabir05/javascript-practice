@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learning Javascript</title>
+</head>
+
+<body>
+    <div id="kamal" onclick="myFamily()">Click Me</div>
+
+
+    <script>
+
+    function myFamily() 
+    {
+
+        alert('Amake click kora hoyece');
+        document.getElementById('kamal').innerHTML='Clicked';
+        document.body.style.backgroundColor = "red";
+        console.log('Golam Mostofa')
+    
+    } 
+
+
+
+
+
+    function fanOffKor(){
+        console.log('bosha thakle uthe dara')
+        console.log('walk toward the switch')
+        console.log('click the switch to off of the fan')
+    }
+    fanOffKor();
+
+    function vaatKhao (){
+        console.log('hand wash kore aso')
+        console.log('basho')
+        console.log('plate e khabar dhabar nao')
+        console.log('gopat gopat kore khao')
+    }
+    vaatKhao();
+
+
+
+    // প্রাকটিস 
+    // ১) জুস খাও নামে একটা ফাংশন লিখ। যেটাকে কল করলে আইটপুট দিবে- এই নাও লেবুর জুস।
+    
+    function juiceKhao (){
+        console.log('Ei naw lebur ras')
+    }
+    juiceKhao();
+
+    // ২) এখন myRoutine নামে একটা ফংশন লিখ। এটিার ভিতরে থাকবে, প্রতিদিন সকালে ঘুম থেকে উঠে তুইকিী কী কাজ করস, সেগুলোর লিস্ট। একটা একটা করে কাজের নাম এক একলাইনে কনসোল লগ দিয়ে লিখবি।
+
+    function myRoutine () {
+
+        // document.getElementById("kamal").innerHTML = "He is my friend";
+
+        console.log('আমাদর দাঁত ব্রাশ করি')
+        console.log('এক্সারসাইজ করি')
+        console.log('নাস্তা করি')
+        console.log('বাসা থেকে বের হই')
+    }
+    myRoutine();
+
+    // ৩) তোর পরিবারের জন্য একটা ফাংশন লিখ। তুই যেকোনো একটা নাম দে। তারপর এইটার মধ্যে তোর যত পরিবারের সদস্য আছে তাদের নাম একএক করে আইটপুট করে দেখাবি। 
+
+    // function myFamily() 
+    // {
+
+    //     document.body.style.backgroundColor = "red";
+    //     console.log('Golam Mostofa')
+    
+    // } 
+
+    //myFamily();
+
+    // ৪) একটা taskDone নামে ফাংশন লিখ। ফাংশনটাতে তোর সারাদিনের ৫া কাজ একেক লাইনে কনসোল লগ দিয়ে দেখা।
+
+    function taskDone () {
+        console.log('ঘুম থেকে উঠে এক্সারসাইজ করি')
+        console.log('সকাল ১০টার দিকে ওয়েব ডেবেলপমেন্ট ক্লাশে যাই')
+        console.log('বেলা তিনটার দিকে অফিসে যাই')
+        console.log('অফিস রাত ১০টা পর্যন্ত কাজ করি')
+        console.log('রাত ১১টার দিকে বাসায় ফিরি')
+    } 
+    taskDone();
+
+    // ৫) GreetMe নামে ফাংশন লিখ। ফাংশনটাতে কল করলে আউটপুট আসবে Good Morning! Have a gret day!
+    
+    function greetMe () {
+        console.log('Good Mornning!')
+        console.log('Have a great day!')
+    }
+    greetMe();
+
+
+    // 6)তোর সবচেয়ে ক্লোজ তিন বন্ধুর নাম দেখনোর জন্য  GetFavFriends নামে ফাংশন লিখ। তারপর সেটার ভিতরে তোর ক্লোজ তিন বন্ধুর নাম আউটপুট হিসেবে দেখাবি। 
+
+    function GetFavFriends (){
+        console.log('Refat Jamil')
+        console.log('Ali Ajam')
+        console.log('Tanvir Ahmed')
+    }
+    GetFavFriends();
+
+
+    // ৭) introduceMyself নামে ফাংশন লিখ। ফাংশন করল করলে তোর নাম, বয়স ঠিাকা, ফোন নাম্বার, উচ্চতা আর তোর প্রিয় খাবার আউটপুট হিসেবে দেখা যাবে।
+    
+    function introduceMyself (){
+        console.log('Name : Rezaul Kabir')
+        console.log('Height : 5.8')
+        console.log('Waight : 85kg')
+        console.log('Age : 41')
+        console.log('Fav Food : Vat, Dal, Alu Varta')
+    }
+    introduceMyself();
+
+
+
+    </script>
+
+</body>
+
+</html>
